@@ -79,6 +79,7 @@
         var button = ui.button({
           contents: options.imageAttributes.icon,
           tooltip:  lang.imageAttributes.tooltip,
+          container: false,
           click: function () {
             context.invoke('imageAttributes.show');
           }
