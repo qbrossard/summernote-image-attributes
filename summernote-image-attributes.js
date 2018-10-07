@@ -90,11 +90,11 @@
         var $container = options.dialogsInBody ? $(document.body) : $editor;
         var timestamp = Date.now();
         var body = '<ul class="nav note-nav nav-tabs note-nav-tabs">' +
-                   '  <li class="active"><a href="#note-imageAttributes' + timestamp + '" data-toggle="tab">' + lang.imageAttributes.tabImage + '</a></li>' +
-                   '  <li><a href="#note-imageAttributes-attributes' + timestamp + '" data-toggle="tab">' + lang.imageAttributes.tabAttributes + '</a></li>' +
-                   '  <li><a href="#note-imageAttributes-link' + timestamp + '" data-toggle="tab">' + lang.imageAttributes.tabLink + '</a></li>';
+                   '  <li class="nav-item active"><a href="#note-imageAttributes' + timestamp + '" data-toggle="tab" class="nav-link">' + lang.imageAttributes.tabImage + '</a></li>' +
+                   '  <li class="nav-item"><a href="#note-imageAttributes-attributes' + timestamp + '" data-toggle="tab" class="nav-link">' + lang.imageAttributes.tabAttributes + '</a></li>' +
+                   '  <li class="nav-item"><a href="#note-imageAttributes-link' + timestamp + '" data-toggle="tab" class="nav-link">' + lang.imageAttributes.tabLink + '</a></li>';
         if (options.imageAttributes.disableUpload == false) {
-           body += '  <li><a href="#note-imageAttributes-upload' + timestamp + '" data-toggle="tab">' + lang.imageAttributes.tabUpload + '</a></li>';
+           body += '  <li class="nav-item"><a href="#note-imageAttributes-upload' + timestamp + '" data-toggle="tab" class="nav-link">' + lang.imageAttributes.tabUpload + '</a></li>';
         }
         body +=    '</ul>' +
                    '<div class="tab-content note-tab-content">' +
